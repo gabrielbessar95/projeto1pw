@@ -1,0 +1,58 @@
+<html>
+  <head> </head>
+
+  <body>
+    <a id="bola1" 
+    href="#" 
+    onClick="javascript:esconderTabela();"
+    >
+      <img src="Imagens/bola.png" />
+    </a>
+    <a
+      id="bola2"
+      href="#"
+      style="display: none"
+      onClick="javascript:mostrarTabela();"
+    >
+      <img src="Imagens/bola.png" />
+    </a>
+    <table id="tabela" border="1">
+      <tr>
+        <th>Bola de ouro</th>
+        <th>Ano</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    function mostrarTabela() {
+      document.getElementById("tabela").style.visibility = "visible";
+      document.getElementById("bola1").style.display = "block";
+      document.getElementById("bola2").style.display = "none";
+    }
+    function esconderTabela() {
+      document.getElementById("tabela").style.visibility = "hidden";
+      document.getElementById("bola1").style.display = "none";
+      document.getElementById("bola2").style.display = "block";
+    }
+  </script>
+</html>
